@@ -5,16 +5,88 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/cekDefault"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/alata"
+        android:text="00 : 00"
+        android:textAlignment="center"
+        android:textColor="?attr/colorSurfaceInverse"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/guideline45h"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:fontFamily="@font/alata"
+        android:text="SELECT TIME"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorSurface"
+        android:textSize="18sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cekDefault" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="?attr/colorErrorContainer"
+        android:fontFamily="@font/alata"
+        android:text="CANCEL ALARM"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorError"
+        android:textSize="18sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline50v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="?attr/colorSecondaryContainer"
+        android:fontFamily="@font/alata"
+        android:text="START ALARM"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="18sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline50v"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline45h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
