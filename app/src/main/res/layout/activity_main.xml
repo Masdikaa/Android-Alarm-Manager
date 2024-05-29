@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/cekDefault"
+        android:id="@+id/dateTimeTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
@@ -24,7 +24,7 @@
         tools:ignore="HardcodedText" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+        android:id="@+id/setTimeButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
@@ -38,10 +38,10 @@
         app:cornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cekDefault" />
+        app:layout_constraintTop_toBottomOf="@+id/dateTimeTV" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton2"
+        android:id="@+id/cancelAlarmButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -56,9 +56,10 @@
         app:cornerRadius="5dp"
         app:layout_constraintEnd_toStartOf="@id/guideline50v"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+        app:layout_constraintTop_toBottomOf="@+id/setTimeButton" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/setAlarmButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -73,7 +74,7 @@
         app:cornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/guideline50v"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+        app:layout_constraintTop_toBottomOf="@+id/setTimeButton" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline45h"
